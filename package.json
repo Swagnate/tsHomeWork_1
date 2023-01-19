@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "ts-loader": "^9.4.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "name": "homework_1",
+  "version": "1.0.0",
+  "description": "first_project",
+  "main": "index.js",
+  "scripts": {
+    "test": "end"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Swagnate/tsHomeWork_1/index.js"
+  },
+  "keywords": [
+    "\"homepage\":",
+    "\"https://github.com/Swagnate"
+  ],
+  "author": "Matvei Matveev",
+  "license": "MIT"
+}

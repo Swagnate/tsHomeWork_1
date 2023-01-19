@@ -1,0 +1,89 @@
+Создать 3 файла ts.
+
+1. users.ts
+
+2. userInfo.ts
+
+3. index.ts
+
+В файле users.ts создать массив usersArray c 2 объектами пользователей.
+
+usersArray
+ 
+[
+{
+ userid: '127e4567-e89b-12d3-a458-426614174000',
+ name: 'John',
+ gender: 'man'
+}   
+{
+ userid: '127e4567-e89a-12f3-a458-327395154000',
+ name: 'Anna',
+ gender: 'woman'
+}  
+
+]
+ 
+В файле userInfo.ts создать массив usersInfoArra c 2 объектами.
+
+usersInfoArray
+
+ 
+{
+userid: '127e4567-e89b-12d3-a458-426614174000',
+name: 'John',
+birthdate: '1982-02-17T21:00:00.000Z',
+age: 40,
+organization: {
+  name: 'Amazon',
+  position: 'General manager' 
+ }
+}
+ 
+{
+userid: '127e4567-e89a-12f3-a458-327395154000',
+name: 'Anna',
+birthdate: '1988-02-17T21:00:00.000Z',
+age: 34,
+organization: {
+  name: 'Amazon',
+  position: 'Manager' 
+ }
+}
+В файле index.ts создать функцию getUsersJobPositions(usersArray) , которая на вход принимает массив пользователей из users.ts, на выход возвращает новый массив с объектами c новой структурой:
+
+ 
+[
+{
+ name: 'Anna',
+ position: 'Manager',
+ age: 34,
+ gender: 'woman'
+},
+{
+ name: 'John',
+ position: 'General manager',
+ age: 40,
+ gender: 'man'
+}
+ 
+]
+Далее в index.ts создать переменную usersPositions и присвоить ей результат вызова функции.
+
+const usersPositions = getUsersJobPositions(usersArray); 
+// в users должен записаться новый массив 
+                                                                                       Задание
+1. Создать интерфейсы (описать структуру массивов , объектов, возвращающихся типов, параметров).
+
+2. В index.ts импортировать файлы  userinfo.ts , users.ts.
+
+3.  Настроить webpack для сборки подключить файл index.ts.
+
+4.  В файле index.ts  в сonsole.log добавить содержимое переменной usersPositions .
+
+1
+(console.log('userPositions', usersPositions)
+
+5. Сделать сборку проекта и подключить файл сборки на страницу index.html.
+
+6.  Локально при заходе на страницу  index.html в консоле должны отобразится  новые объекты.
